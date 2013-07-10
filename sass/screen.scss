@@ -1,0 +1,61 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import 'compass';
+
+body {
+  background: #333;
+  padding-top: 0;
+  padding-bottom: 40px;
+}
+
+a {
+  @include link-colors(#333, #000);
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.main-wrapper {
+  background: white;
+}
+
+.container-narrow {
+  background: white;
+  margin: 0 auto;
+  max-width: 700px;
+
+  & > hr {
+    margin: 30px 0;
+  }
+
+  ul.menu {
+    margin-top: 10px;
+  }
+}
+
+.footer {
+  background: #333;
+  color: white;
+  border-top: none;
+
+  ul.views-summary {
+    margin-left: 0;
+
+    width: 700px;
+
+    li {
+      list-style: none;
+      float: left;
+      width: 175px;
+    }
+  }
+
+  a {
+    @include link-colors(white, darken(white, 20));
+  }
+}
+

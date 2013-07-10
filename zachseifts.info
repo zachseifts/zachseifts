@@ -5,17 +5,12 @@ version = 7.x-1.x
 base theme = bootstrap
 
 ; Regions
-regions[navigation]     = 'Navigation'
-regions[header]         = 'Top Bar'
-regions[highlighted]    = 'Highlighted'
 regions[help]           = 'Help'
 regions[content]        = 'Content'
-regions[sidebar_first]  = 'Primary'
-regions[sidebar_second] = 'Secondary'
 regions[footer]         = 'Footer'
 
 ; Stylesheets
-stylesheets[all][] = css/style.css
+stylesheets[all][] = css/screen.css
 
 ; Grab bootstrap from the cdn
 settings[toggle_name] = 0
