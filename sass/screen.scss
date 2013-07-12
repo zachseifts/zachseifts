@@ -5,15 +5,23 @@
 
 @import 'compass';
 
+$darkColor: #333;
+$middleBreakPoint: 767px;
+$bodyFontSize: 16px;
+
 body {
-  background: #333;
+  background: $darkColor;
   padding-top: 0;
   padding-bottom: 40px;
-  font-size: 16px;
+  font-size: $bodyFontSize;
+
+  @media screen and (max-width: $middleBreakPoint) {
+    background: white;
+  }
 }
 
 a {
-  @include link-colors(#333, #000);
+  @include link-colors($darkColor, black);
   text-decoration: underline;
 
   &:hover {
@@ -48,7 +56,7 @@ a {
 
 .submitted {
   font-style: normal;
-  color: #333;
+  color: $darkColor;
 }
 
 h1.title,
@@ -69,7 +77,7 @@ h3 {
 }
 
 .footer {
-  background: #333;
+  background: $darkColor;
   color: white;
   border-top: none;
   font-size: 14px;
@@ -92,6 +100,24 @@ h3 {
 
   a {
     @include link-colors(white, darken(white, 20));
+  }
+
+  @media screen and (max-width: $middleBreakPoint) {
+    background: white;
+    color: $darkColor;
+
+    a {
+      @include link-colors($darkColor, darken($darkColor, 20));
+    }
+
+    ul.views-summary {
+      width: auto;
+
+      li {
+        width: auto;
+        float: none;
+      }
+    }
   }
 }
 
