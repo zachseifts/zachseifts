@@ -1,0 +1,15 @@
+
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media (max-width: 480px) { @content; }
+  }
+  @else if $media == medium-screens {
+    @media (max-width: 767px) { @content; }
+  }
+  @else if $media == large-screens {
+    @media (min-width: 768px) and (max-width: 979px) { @content; }
+  }
+  @else if $media == larger-screens {
+    @media (min-width: 1200px) { @content; }
+  }
+}

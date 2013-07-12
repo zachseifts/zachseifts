@@ -10,7 +10,7 @@ regions[content]        = 'Content'
 regions[footer]         = 'Footer'
 
 ; Stylesheets
-stylesheets[all][] = css/screen.css
+stylesheets[all][] = css/main.css
 
 ; Grab bootstrap from the cdn
 settings[toggle_name] = 0

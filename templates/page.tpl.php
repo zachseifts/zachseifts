@@ -1,5 +1,5 @@
 <div class="main-wrapper">
-  <div class="main-container container container-narrow">
+  <div class="container container-narrow">
     <header class="header-container">
       <?php if (!empty($primary_nav)): ?>
         <?php print render($primary_nav); ?>
@@ -35,7 +35,7 @@
   </div>
 </div>
 
-<footer class="footer container-narrow">
+<footer class="footer container container-narrow">
   <?php print render($page['footer']); ?>
   <hr />
   <p>&copy; 2011 - <?php print Date('Y'); ?> Zach Seifts</p>

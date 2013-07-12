@@ -1,0 +1,30 @@
+/**
+ * Main sass styles for my theme.
+ */
+
+@import 'compass';
+
+// Import modules
+@import 'modules/responsive';
+
+// Set variables
+@import 'partials/layout';
+@import 'partials/colors';
+@import 'partials/typography';
+
+body {
+  padding-top: 0;
+}
+
+ul.menu {
+  margin-top: 10px;
+}
+
+.footer {
+  border-top: none;
+
+  @include respond-to(medium-screens) {
+    border-top: 1px solid #eee;
+  }
+}
+

@@ -1,0 +1,56 @@
+$bodyFontSize: 16px;
+
+body {
+  font-size: $bodyFontSize;
+}
+
+a {
+  @include link-colors($darkColor, $darkerColor);
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+h1.page-header,
+h1.title {
+  font-size: 30px;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+.footer {
+  a {
+    @include link-colors(white, darken(white, 30));
+  }
+
+  @include respond-to(medium-screens) {
+    a {
+      @include link-colors($darkColor, $darkerColor);
+    }
+  }
+}
+
+.submitted {
+  font-style: normal;
+  color: $darkColor;
+}
+
+.header-container,
+.footer {
+  a {
+    text-decoration: none;
+  }
+}
+

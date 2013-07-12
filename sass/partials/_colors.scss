@@ -1,0 +1,26 @@
+$backgroundColor: white;
+$darkColor: #333;
+$darkerColor: darken($darkColor, 30);
+
+body {
+  background: $darkColor;
+
+  @include respond-to(medium-screens) {
+    background: white;
+  }
+
+  &.toolbar-drawer {
+    padding-top: 60 !important;
+  }
+}
+
+.main-wrapper {
+  background: white;
+}
+
+.footer {
+  color: white;
+  @include respond-to(medium-screens) {
+    color: $darkColor;
+  }
+}
