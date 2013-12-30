@@ -11,3 +11,13 @@
 function zachseifts_menu_tree__primary(&$variables) {
   return '<ul class="menu nav nav-pills pull-right"">' . $variables['tree'] . '</ul>';
 }
+
+/**
+ * Implements hook_preprocess_node();
+ */
+function zachseifts_preprocess_node(&$variables) {
+  // Changes how the 'Submitted by' line reads.
+  $variables['submitted'] = t('Posted on !datetime by !username',
+    array('!datetime' => $variables['date'], '!username' => $variables['name']));
+}
+
