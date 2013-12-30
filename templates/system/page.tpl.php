@@ -77,18 +77,13 @@
 <div class="header-wrapper">
   <div class="container">
     <div class="row">
-      <div class="col-sm-12 col-md-9">
+      <div class="col-sm-12">
         <h1 class="muted">
           <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" class="brand"><?php print $site_name; ?></a>
           <?php if (!empty($title)): ?>
             <small><?php print $title; ?></small>
           <?php endif; ?>
         </h1>
-      </div>
-      <div class="col-sm-12 col-md-3">
-        <?php if (!empty($primary_nav)): ?>
-          <?php print render($primary_nav); ?>
-        <?php endif; ?>
       </div>
     </div>
   </div>
