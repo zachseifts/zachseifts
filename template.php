@@ -17,7 +17,7 @@ function zachseifts_menu_tree__primary(&$variables) {
  */
 function zachseifts_preprocess_node(&$variables) {
   // Changes how the 'Submitted by' line reads.
-  $variables['submitted'] = t('Posted on !datetime by !username',
-    array('!datetime' => $variables['date'], '!username' => $variables['name']));
+  $variables['submitted'] = t('!datetime',
+    array('!datetime' => $variables['date']));
 }
 
