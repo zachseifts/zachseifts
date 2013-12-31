@@ -1,0 +1,34 @@
+$bodyFontSize: 16px;
+
+body {
+  font-size: $bodyFontSize;
+}
+
+a {
+  @include link-colors($darkColor, $darkerColor);
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.header-wrapper {
+  h1 {
+    font-size: $bodyFontSize + 20;
+    a {
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.main-wrapper {
+  .submitted {
+    font-style: normal;
+    color: $darkColor;
+  }
+}

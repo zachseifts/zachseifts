@@ -8,5 +8,5 @@ regions[help]           = 'Help'
 regions[content]        = 'Content'
 
 ;; Stylesheets
-stylesheets[all][] = css/style.css
+stylesheets[all][] = css/main.css
 
